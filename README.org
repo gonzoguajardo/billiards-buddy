@@ -1,0 +1,18 @@
+* Billiards Buddy
+
+iOS application to keep score of various billiards games
+
+** Goals
+
+One of the goals of the project is to only use [[https://developer.apple.com/swift/][swift]] and [[https://developer.apple.com/xcode/swiftui/][swift-ui]].
+
+** Feature Road Map
+*** TODO Support for [[https://en.wikipedia.org/wiki/Bowlliards][Bowlliards]] game.
+*** TODO Show history of games.
+*** TODO Support for [[https://en.wikipedia.org/wiki/Eight-ball][8-ball]] game.
+
+** Development
+
+*** Linting
+
+For linting we will be using [[https://github.com/realm/SwiftLint][SwiftLint]]. To run swiftlint cd to the project directory and run =swiftlint=. This will output any swiftlint errors if any.

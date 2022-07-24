@@ -1,0 +1,9 @@
+# emacs
+.projectile
+
+# mac
+.DS_STORE
+
+# xcodeproj user files
+*.xcbkptlist
+*.xcuserstate
