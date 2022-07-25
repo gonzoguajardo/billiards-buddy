@@ -14,6 +14,8 @@
 		9FB030D7288C86B400614EE7 /* billiards_buddyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB030D6288C86B400614EE7 /* billiards_buddyTests.swift */; };
 		9FB030E1288C86B400614EE7 /* billiards_buddyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB030E0288C86B400614EE7 /* billiards_buddyUITests.swift */; };
 		9FB030E3288C86B400614EE7 /* billiards_buddyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB030E2288C86B400614EE7 /* billiards_buddyUITestsLaunchTests.swift */; };
+		9FB030F0288DDEF000614EE7 /* BowlliardsFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB030EF288DDEF000614EE7 /* BowlliardsFrame.swift */; };
+		9FB030F2288E163B00614EE7 /* BowlliardsScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB030F1288E163B00614EE7 /* BowlliardsScoreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		9FB030DC288C86B400614EE7 /* billiards-buddyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "billiards-buddyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FB030E0288C86B400614EE7 /* billiards_buddyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = billiards_buddyUITests.swift; sourceTree = "<group>"; };
 		9FB030E2288C86B400614EE7 /* billiards_buddyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = billiards_buddyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9FB030EF288DDEF000614EE7 /* BowlliardsFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlliardsFrame.swift; sourceTree = "<group>"; };
+		9FB030F1288E163B00614EE7 /* BowlliardsScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlliardsScoreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 				9FB030C7288C86B200614EE7 /* ContentView.swift */,
 				9FB030C9288C86B400614EE7 /* Assets.xcassets */,
 				9FB030CB288C86B400614EE7 /* Preview Content */,
+				9FB030EF288DDEF000614EE7 /* BowlliardsFrame.swift */,
+				9FB030F1288E163B00614EE7 /* BowlliardsScoreView.swift */,
 			);
 			path = "billiards-buddy";
 			sourceTree = "<group>";
@@ -257,7 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FB030F0288DDEF000614EE7 /* BowlliardsFrame.swift in Sources */,
 				9FB030C8288C86B200614EE7 /* ContentView.swift in Sources */,
+				9FB030F2288E163B00614EE7 /* BowlliardsScoreView.swift in Sources */,
 				9FB030C6288C86B200614EE7 /* billiards_buddyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
