@@ -2,48 +2,30 @@
 //  BowlliardsFrame.swift
 //  billiards-buddy
 //
-//  Created by Gonzo Guajardo on 7/24/22.
+//  Created by Gonzo Guajardo on 10/15/22.
 //
 
-import SwiftUI
+import Foundation
 
-struct BowlliardsFrame: View {
-    var frame = 1
-    @State var score1 = "-"
-    @State var score2 = "-"
-    @State var score3 = "-"
-    @State private var isShowingPopover = false
-    @State private var isShowingPopover2 = false
+class BowlliardsFrame: Hashable, ObservableObject{
 
-    var body: some View {
-        HStack {
-            Text(String(frame))
-              .padding()
-            Button(String(score1)) {
-                    self.isShowingPopover = true
-                }
-                  .padding()
-              .cornerRadius(5)
-              .border(Color.black, width: 2)
-              .popover(isPresented: $isShowingPopover) {
-                  BowlliardsScoreView(score: $score1)
-              }
-            Button(String(score2)) {
-                self.isShowingPopover2 = true
-            }
-              .padding()
-              .cornerRadius(5)
-              .border(Color.black, width: 2)
-              .popover(isPresented: $isShowingPopover2) {
-                  BowlliardsScoreView(score: $score2)
-              }
-        }
-          .padding()
+    var frame: Int
+    @Published var score1: String
+    @Published var score2: String
+    @Published var score3: String
+
+    init(frame: Int) {
+        self.frame = frame
+        self.score1 = "-"
+        self.score2 = "-"
+        self.score3 = "-"
     }
-}
 
-struct BowlliardsFrame_Previews: PreviewProvider {
-    static var previews: some View {
-        BowlliardsFrame()
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(frame)
+    }
+
+    static func == (lhs: BowlliardsFrame, rhs: BowlliardsFrame) -> Bool {
+        lhs.frame == rhs.frame
     }
 }

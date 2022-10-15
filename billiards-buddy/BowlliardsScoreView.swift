@@ -45,7 +45,6 @@ struct BowlliardsScoreButton: View {
           .cornerRadius(5)
           .border(Color.black, width: 2)
           .if(score == selectedScore) { view in
-              // We only apply this background color if shouldApplyBackground is true
               view.background(Color.green)
           }
     }

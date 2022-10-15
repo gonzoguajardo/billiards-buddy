@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var game = BowlliardsGame()
     var body: some View {
-        Text("Hello, world!")
-            .padding()
-        BowlliardsFrame()
-        Text("some other text")
-          .padding()
+        ScrollView {
+            ForEach(game.frames, id: \.self) { frame in
+                BowlliardsFrameView(bowlliardsFrame: frame)
+            }
+        }
     }
 }
 
