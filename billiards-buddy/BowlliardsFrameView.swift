@@ -15,26 +15,26 @@ struct BowlliardsFrameView: View {
     var body: some View {
         HStack {
             Text(String(bowlliardsFrame.frame))
-              .padding()
+                .padding()
             Button(String(bowlliardsFrame.score1)) {
-                    self.isShowingPopover = true
+                self.isShowingPopover = true
+            }
+                .padding()
+                .cornerRadius(5)
+                .border(Color.black, width: 2)
+                .popover(isPresented: $isShowingPopover) {
+                    BowlliardsScoreView(score: $bowlliardsFrame.score1)
                 }
-                  .padding()
-              .cornerRadius(5)
-              .border(Color.black, width: 2)
-              .popover(isPresented: $isShowingPopover) {
-                  BowlliardsScoreView(score: $bowlliardsFrame.score1)
-              }
             Button(String(bowlliardsFrame.score2)) {
                 self.isShowingPopover2 = true
             }
-              .padding()
-              .cornerRadius(5)
-              .border(Color.black, width: 2)
-              .popover(isPresented: $isShowingPopover2) {
-                  BowlliardsScoreView(score: $bowlliardsFrame.score2)
-              }
+                .padding()
+                .cornerRadius(5)
+                .border(Color.black, width: 2)
+                .popover(isPresented: $isShowingPopover2) {
+                    BowlliardsScoreView(score: $bowlliardsFrame.score2)
+                }
         }
-          .padding()
+            .padding()
     }
 }

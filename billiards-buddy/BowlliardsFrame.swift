@@ -7,7 +7,7 @@
 
 import Foundation
 
-class BowlliardsFrame: Hashable, ObservableObject{
+class BowlliardsFrame: Hashable, ObservableObject {
 
     var frame: Int
     @Published var score1: String

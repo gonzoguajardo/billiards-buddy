@@ -8,12 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var game = BowlliardsGame()
+    @StateObject var games = BowlliardsGames()
     var body: some View {
-        ScrollView {
-            ForEach(game.frames, id: \.self) { frame in
-                BowlliardsFrameView(bowlliardsFrame: frame)
+        NavigationView {
+            List {
+                ForEach(games.games) { game in
+                    NavigationLink(
+                        destination: BowlliardsGameView(bowlliardsGame: game)) {
+                            Text(game.name)
+                    }
+                }
             }
+            .navigationTitle("Bowlliards Games")
+            .navigationBarItems(trailing:
+                Button {
+                    games.games.append(BowlliardsGame())
+                } label: {
+                Image(systemName: "plus")
+                })
         }
     }
 }

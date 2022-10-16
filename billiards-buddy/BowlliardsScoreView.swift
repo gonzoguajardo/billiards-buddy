@@ -35,18 +35,18 @@ struct BowlliardsScoreView: View {
 struct BowlliardsScoreButton: View {
     let score: String
     @Binding var selectedScore: String
-    var body : some View {
+    var body: some View {
         Button(action: {
-                   selectedScore = score
-               }, label: {
-                      Text(score)
-                  })
-          .padding()
-          .cornerRadius(5)
-          .border(Color.black, width: 2)
-          .if(score == selectedScore) { view in
-              view.background(Color.green)
-          }
+            selectedScore = score
+        }, label: {
+            Text(score)
+        })
+            .padding()
+            .cornerRadius(5)
+            .border(Color.black, width: 2)
+            .if(score == selectedScore) { view in
+                view.background(Color.green)
+            }
     }
 }
 

@@ -18,6 +18,8 @@
 		9FB030F2288E163B00614EE7 /* BowlliardsScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB030F1288E163B00614EE7 /* BowlliardsScoreView.swift */; };
 		9FF927E728FB422E00CDB63C /* BowlliardsFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF927E628FB422E00CDB63C /* BowlliardsFrame.swift */; };
 		9FF927E928FB46B300CDB63C /* BowlliardsGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF927E828FB46B300CDB63C /* BowlliardsGame.swift */; };
+		9FF927EB28FC344D00CDB63C /* BowlliardsGames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF927EA28FC344D00CDB63C /* BowlliardsGames.swift */; };
+		9FF927ED28FC354600CDB63C /* BowlliardsGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF927EC28FC354600CDB63C /* BowlliardsGameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +42,7 @@
 /* Begin PBXFileReference section */
 		9FB030C2288C86B200614EE7 /* billiards-buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "billiards-buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FB030C5288C86B200614EE7 /* billiards_buddyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = billiards_buddyApp.swift; sourceTree = "<group>"; };
-		9FB030C7288C86B200614EE7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9FB030C7288C86B200614EE7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; usesTabs = 0; };
 		9FB030C9288C86B400614EE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FB030CC288C86B400614EE7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9FB030D2288C86B400614EE7 /* billiards-buddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "billiards-buddyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +54,8 @@
 		9FB030F1288E163B00614EE7 /* BowlliardsScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlliardsScoreView.swift; sourceTree = "<group>"; };
 		9FF927E628FB422E00CDB63C /* BowlliardsFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlliardsFrame.swift; sourceTree = "<group>"; };
 		9FF927E828FB46B300CDB63C /* BowlliardsGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlliardsGame.swift; sourceTree = "<group>"; };
+		9FF927EA28FC344D00CDB63C /* BowlliardsGames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlliardsGames.swift; sourceTree = "<group>"; };
+		9FF927EC28FC354600CDB63C /* BowlliardsGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlliardsGameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +110,10 @@
 				9FB030C7288C86B200614EE7 /* ContentView.swift */,
 				9FB030C9288C86B400614EE7 /* Assets.xcassets */,
 				9FB030CB288C86B400614EE7 /* Preview Content */,
+				9FF927EA28FC344D00CDB63C /* BowlliardsGames.swift */,
 				9FF927E828FB46B300CDB63C /* BowlliardsGame.swift */,
 				9FF927E628FB422E00CDB63C /* BowlliardsFrame.swift */,
+				9FF927EC28FC354600CDB63C /* BowlliardsGameView.swift */,
 				9FB030EF288DDEF000614EE7 /* BowlliardsFrameView.swift */,
 				9FB030F1288E163B00614EE7 /* BowlliardsScoreView.swift */,
 			);
@@ -271,6 +277,8 @@
 			files = (
 				9FF927E728FB422E00CDB63C /* BowlliardsFrame.swift in Sources */,
 				9FB030F0288DDEF000614EE7 /* BowlliardsFrameView.swift in Sources */,
+				9FF927EB28FC344D00CDB63C /* BowlliardsGames.swift in Sources */,
+				9FF927ED28FC354600CDB63C /* BowlliardsGameView.swift in Sources */,
 				9FF927E928FB46B300CDB63C /* BowlliardsGame.swift in Sources */,
 				9FB030C8288C86B200614EE7 /* ContentView.swift in Sources */,
 				9FB030F2288E163B00614EE7 /* BowlliardsScoreView.swift in Sources */,
