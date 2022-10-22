@@ -8,9 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var games = BowlliardsGames()
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List {
+                ForEach(games.games) { game in
+                    NavigationLink(
+                        destination: BowlliardsGameView(bowlliardsGame: game)) {
+                            Text(game.name)
+                    }
+                }
+            }
+            .navigationTitle("Bowlliards Games")
+            .navigationBarItems(trailing:
+                Button {
+                    games.games.append(BowlliardsGame())
+                } label: {
+                Image(systemName: "plus")
+                })
+        }
     }
 }
 
